@@ -16,7 +16,7 @@
 
 package com.example.android.architecture.blueprints.todoapp.tasks
 
-import androidx.arch.core.executor.testing.InstantTaskExecutorRule
+//import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.example.android.architecture.blueprints.todoapp.getOrAwaitValue
@@ -35,8 +35,8 @@ class TasksViewModelTest {
     private lateinit var tasksViewModel: TasksViewModel
 
     // Executes each task synchronously using Architecture Components.
-    @get:Rule
-    var instantExecutorRule = InstantTaskExecutorRule()
+//    @get:Rule
+//    var instantExecutorRule = InstantTaskExecutorRule()
 
     @Before
     fun setupViewModel() {
