@@ -31,9 +31,7 @@ import java.util.LinkedHashMap
 class FakeAndroidTestRepository : TasksRepository {
 
     var tasksServiceData: LinkedHashMap<String, Task> = LinkedHashMap()
-
     private val observableTasks = MutableLiveData<Result<List<Task>>>()
-
 
     override suspend fun refreshTasks() {
         observableTasks.value = getTasks()

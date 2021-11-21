@@ -31,9 +31,7 @@ import java.util.LinkedHashMap
 class FakeTestRepository : TasksRepository {
 
     var tasksServiceData: LinkedHashMap<String, Task> = LinkedHashMap()
-
     private var shouldReturnError = false
-
     private val observableTasks = MutableLiveData<Result<List<Task>>>()
 
     fun setReturnError(value: Boolean) {
